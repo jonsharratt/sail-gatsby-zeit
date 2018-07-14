@@ -12,6 +12,7 @@
     <Branch when="^master$">
       <ZeitNow
         public
+        regions="sfo,bru"
         paths="./public"
         token="$ZEIT_TOKEN"
         alias="sailci-demo"
