@@ -11,7 +11,6 @@
     <Run command="yarn build" />
     <ZeitNow
       paths="./public"
-      public
       regions="bru"
       token="$ZEIT_TOKEN"
       alias="sailci-demo"
