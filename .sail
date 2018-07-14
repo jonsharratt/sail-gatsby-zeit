@@ -13,7 +13,6 @@
       <ZeitNow
         public
         paths="./public"
-        regions="bru"
         token="$ZEIT_TOKEN"
         alias="sailci-demo"
       />
