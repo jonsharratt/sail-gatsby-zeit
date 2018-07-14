@@ -9,11 +9,15 @@
   <job image="node:9.2.1-alpine">
     <Run command="yarn" />
     <Run command="yarn build" />
-    <ZeitNow
-      allowPublic
-      path="./public"
-      token="$ZEIT_TOKEN"
-    />
+    <Branch when="^master$">
+      <ZeitNow
+        paths="./public"
+        public
+        regions="bru"
+        token="$ZEIT_TOKEN"
+        alias="sailci-demo"
+      />
+    </Branch>
   </job>
 
 </pipeline>
